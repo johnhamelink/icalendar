@@ -9,8 +9,8 @@ defmodule ICalendar.Event do
             description: nil,
             location:    nil,
             rrule:       nil,
-            errors:      [],
-            url:         nil
+            url:         nil,
+            errors:      []
 
   def valid(%ICalendar.Event{errors: []}), do: true
   def valid(_), do: false
